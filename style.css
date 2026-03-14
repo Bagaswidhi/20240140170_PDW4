@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(22, 218, 185);
+    font-family: Arial, Helvetica, sans-serif;
+} /* Mengatur warna latar belakang halaman dan jenis font yang digunakan */
+
+.container{
+    width: 1000px;
+    margin: 45px auto;
+    
+}/* Mengatur lebar container dan memberikan margin otomatis untuk membuatnya rata tengah */
+
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}/* Mengatur ukuran foto profil, membuatnya bulat, dan memberikan margin bawah */
+
+.klik-saya {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}/* Mengatur gaya tombol "Klik Saya!" dengan warna latar biru, teks putih, tanpa border, dan memberikan efek hover */
+
+.kenalan-yuk {
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}/* Mengatur gaya tombol "Kenalan Yuk" dengan warna latar hijau, teks putih, tanpa border, dan memberikan efek hover */
+

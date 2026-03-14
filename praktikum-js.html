@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Template dasar html -->
+
+<body>
+    <div class="container"> <!-- Membuat container untuk mengatur tata letak halaman -->
+        <div class="card" id = "myCard"> <!-- Membuat card untuk menampilkan informasi dengan latar hitam dan teks putih -->
+            <p id="tanggal" style="text-align: center; font-style: italic; color: gray;"></p>
+            <div style="text-align: center; margin-top: 15px;">
+                <button onclick="tampil()" class="klik-saya"
+                    style="padding: 5px 15px; cursor: pointer;">Facebook</button>
+                <button onclick="show()" class="kenalan-yuk"
+                    style="padding: 5px 15px; cursor: pointer;">Whatsapp</button>
+            </div>
+            <h1 style="color: aqua; font-size: 40px; text-align: center;">Personal Webpage</h1>
+            <!-- Menampilkan judul dengan styling untuk membuatnya lebih besar, berwarna aqua, dan rata tengah -->
+            <img src="IMG_7352.jpg" alt="Foto Profil" class="foto-profil"
+                style="display: block; margin: 20px auto; border-radius: 50%; width: 150px; height: 150px;">
+            <!-- Menampilkan foto profil dengan styling untuk membuatnya bulat dan rata tengah -->
+            <p><b>Nama : </b>Bagas Satya Widhi</p>
+            <p><b>Nim : </b>20240140170</p>
+            <p><b>Email:</b> bagas.satya.ft24@mail.umy.ac.id </p>
+            <h2 class="paragraf1"> <span style="color: cyan;font-size: larger;"> Description</span></h2>
+            <!-- Menampilkan judul untuk bagian deskripsi dengan styling untuk membuatnya lebih besar dan berwarna cyan -->
+            <p> Seorang mahasiswa yang sedang menempuh pendidikan di <span style="color: yellow;">Universitas
+                    Muhammadiyah Yogyakarta. </span> Saya memiliki minat yang besar dalam bidang teknologi dan
+                pengembangan web. Saya senang belajar hal-hal baru dan selalu berusaha untuk meningkatkan keterampilan
+                saya dalam pemrograman dan desain web. Selain itu, saya juga aktif dalam berbagai kegiatan organisasi di
+                kampus, yang membantu saya mengembangkan kemampuan kepemimpinan dan kerja sama tim. Saya berharap dapat
+                terus berkembang dan mencapai tujuan karir saya di bidang teknologi.</p>
+        </div>
+    </div>
+    <style>
+        /* -- Internal style CSS untuk mengatur tampilan card dan paragraf1 -- */
+        .card {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 500px;
+            margin: auto;
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.4),
+                0 0 20px rgba(0, 255, 255, 0.3);
+            opacity: 0;
+            /* Awalnya card tidak terlihat */
+            transform: translateY(20px);
+            /* Memberi efek sedikit turun agar nanti bisa 'naik' saat muncul */
+            transition: opacity 1.5s ease, transform 1.5s ease, background-color 0.5s ease;
+        }
+
+        /* Styling card internal style CSS membuat latar hitam, teks putih, jarak, hingga box-shadow */
+        .card-visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Kelas untuk membuat card terlihat dengan mengatur opacity dan transform */
+
+        .paragraf1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Styling paragraf1 internal style CSS membuat teks rata tengah dan memberikan jarak atas 30px */
+    </style>
+    <script src="script.js"></script>
+    <!-- Menyisipkan file JavaScript eksternal untuk menambahkan interaktivitas pada halaman -->
+</body>
+
+</html>
